@@ -13,12 +13,23 @@ Kalkulator **liczb podobieństwa przepływu** dla warunków atmosfery wzorcowej 
   [AnberISA](https://github.com/karolfurtak/AnberISA)), z której `remach_lib`
   bierze ρ, a, μ, ν na zadanej wysokości.
 
-![Re, Ma, q, EAS w funkcji wysokości](docs/screenshot.png)
+## Zrzuty ekranu
 
-*Wykres wygenerowany headless (matplotlib Agg) bezpośrednio z `remach_lib` —
-przebieg Re, Ma, q i EAS z wysokością dla stałego V_TAS = 200 m/s i L = 1 m.
-Interfejs aplikacji na konsoli renderuje przez SDL2/KMS-DRM, więc bezpieczny
-zrzut z framebuffera nie oddaje jej ekranu — stąd wykres z biblioteki.*
+Rzeczywisty interfejs aplikacji na konsoli (640×480, orientacja pozioma). Klatki
+uchwycone pikselowo tożsame z ekranem: aplikacja renderuje obraz przez Pillow do
+bufora w pamięci, zanim odda go do SDL2 — zrzut zapisuje ten bufor.
+
+| Menu | Punkt — Re / Ma / q / EAS |
+| --- | --- |
+| ![Menu aplikacji](docs/ekran-menu.png) | ![Wyniki dla punktu: Re, Ma, q, EAS](docs/ekran-punkt.png) |
+
+Ekran **PUNKT** dla przelotu na h = 11 000 m (tropopauza, T = 216,65 K), V_TAS =
+250 m/s, L = 2,0 m: Ma = 0,847, Re = 1,28·10⁷, q = 11 372 Pa, EAS = 136,3 m/s.
+
+![Tabela profilu ISA](docs/ekran-tabela.png)
+
+Ekran **TABELA** — profil atmosfery wzorcowej ISA (T, p, ρ, a, σ) w funkcji
+wysokości; tu 0 – 15 000 m co 1000 m.
 
 ## Fizyka
 
