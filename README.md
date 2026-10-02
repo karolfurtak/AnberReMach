@@ -104,3 +104,7 @@ python3 -m pytest tests/ -v
 Pokrycie: definicje Re/Ma/q/EAS względem wartości referencyjnych ISA oraz
 round-trip inwersji (w tym bisekcja wysokości). CI (GitHub Actions, badge
 powyżej) uruchamia zestaw na Pythonie 3.11.
+
+## Licencja
+
+Copyright (c) 2026 Karol Furtak. **Wszelkie prawa zastrzeżone.** Użycie komercyjne, kopiowanie, rozpowszechnianie i modyfikowanie wyłącznie za pisemną zgodą autora — szczegóły w pliku [LICENSE](LICENSE).
